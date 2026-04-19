@@ -173,15 +173,6 @@ Updates the current user's profile.
 - `phoneNumber` — optional, 7–15 digits
 - `accountType` — optional, defaults to `"Individual"`
 
-**Response (success):**
-```json
-{ "success": true, "data": { ...updatedUser } }
-```
-
-**Response (error):**
-```json
-{ "success": false, "error": "Name is required" }
-```
 
 ---
 
@@ -195,11 +186,6 @@ Uploads a profile image file.
 - Accepted types: JPEG, PNG, WebP, GIF
 - Max size: 5MB
 
-**Response:**
-```json
-{ "success": true, "url": "/uploads/abc123.jpg" }
-```
-
 ---
 
 ## Features Implemented
@@ -212,25 +198,6 @@ Uploads a profile image file.
 - Save button disabled while a request is in-flight
 - Toast notifications for success and error states
 - Changes persist to PostgreSQL via Prisma
-
-### Security Tab
-- Static placeholder (out of scope per assignment)
-
-### Notifications Tab
-- Static placeholder (out of scope per assignment)
-
----
-
-## Design Notes
-
-The UI closely follows the Figma reference:
-- **Techbase brand red** (`#E84B2A`) used for primary actions, active tabs, and focus rings
-- **DM Sans** typeface for clean, modern readability
-- Two-column form grid matches the desktop design layout
-- Responsive-ready structure (collapses gracefully on smaller screens)
-- Navbar mirrors the Figma: logo, nav links, bell icon, user avatar + name
-
----
 
 ## Scripts
 
